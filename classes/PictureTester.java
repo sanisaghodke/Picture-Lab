@@ -27,6 +27,19 @@ public class PictureTester
     beach.write("images/oldBeach.jpg");
   }
 
+  public static void testKeepOnlyRed(){
+    Picture beach = new Picture("images/beach.jpg");
+    beach.zeroBlue();
+    beach.zeroGreen();
+    beach.write("images/oldBeach2.jpg");
+  }
+
+  public static void testKeepOnlyGreen(){
+    Picture beach = new Picture("images/beach.jpg");
+    beach.zeroBlue();
+    beach.zeroRed();
+    beach.write("images/oldBeach3.jpg");
+  }
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -37,7 +50,8 @@ public class PictureTester
     // to run
     testZeroBlue();
     testKeepOnlyBlue();
-    //testKeepOnlyRed();
+    testKeepOnlyRed();
+    testKeepOnlyGreen();
     //testNegate();
   
   }
