@@ -20,6 +20,13 @@ public class PictureTester
     beach.write("images/oldBeach.jpg");
   }
   
+  public static void testKeepOnlyBlue(){
+    Picture beach = new Picture("images/beach.jpg");
+    beach.zeroGreen();
+    beach.zeroRed();
+    beach.write("images/oldBeach.jpg");
+  }
+
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
